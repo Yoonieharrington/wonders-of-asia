@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonders of Asia</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your CSS file -->
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <a class="asia" href="index.html">Wonders of Asia</a>
+        </h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            onkeyup="searchSuggestions()"
+            placeholder="Search landmarks..."
+          />
+
+          <div id="suggestions" class="suggestions-container"></div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">All Lankmarks</a></li>
+          <li><a href="myanmar.html">Myanmar</a></li>
+          <li><a href="japan.html">Japan</a></li>
+          <li><a href="cambodia.html">Cambodia</a></li>
+          <li><a href="india.html">India</a></li>
+          <li><a href="china.html">China</a></li>
+          <li><a href="thailand.html">Thailand</a></li>
+          <li><a href="vietnam.html">Vietnam</a></li>
+          <li><a href="malaysia.html">Malaysia</a></li>
+          <li><a href="indonesia.html">Indonesia</a></li>
+          <li><a href="singapore.html">Singapore</a></li>
+          <li><a href="jordan.html">Jordan</a></li>
+          <li><a href="uae.html">UAE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+            <!-- Mount Fuji -->
+<div class="card" data-country="japan" onclick="toggleInfo('info-fuji')">
+  <div class="card-content">
+    <div class="text">
+      <h2>Mount Fuji</h2>
+      <p>
+        <h4>Entrance: Free</h4>
+        <span onclick="event.stopPropagation(); toggleInfo('info-fuji');"></span>
+      </p>
+      <div class="info" id="info-fuji" style="display: none">
+        <button class="close" onclick="event.stopPropagation(); toggleInfo('info-fuji');"> X </button>
+        <p>Mount Fuji is Japan's tallest mountain, and a popular destination for hiking and cultural visits.</p>
+        <p>Visiting Hours: 24 hours (best during summer)</p>
+        <p>Contact: +81 42 445 0798</p>
+        <a href="https://www.fujisan-climb.jp/en/" target="_blank" class="learn-more"
+  >Learn More</a
+>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13085.731379218384!2d138.7273630780467!3d35.36055525121712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601b2f3eb2c16d7d%3A0x57aa7d56e9332f0a!2sMount%20Fuji!5e0!3m2!1sen!2sjp!4v1632651495677!5m2!1sen!2sjp" width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    <img src="mount-fuji.jpg" alt="Mount Fuji" />
+  </div>
+</div>
+
+    </main>
+    <script src="script.js"></script>
+    <!-- Link to your JavaScript file -->
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonders of Asia</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your CSS file -->
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <a class="asia" href="index.html">Wonders of Asia</a>
+        </h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            onkeyup="searchSuggestions()"
+            placeholder="Search landmarks..."
+          />
+
+          <div id="suggestions" class="suggestions-container"></div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">All Lankmarks</a></li>
+          <li><a href="myanmar.html">Myanmar</a></li>
+          <li><a href="japan.html">Japan</a></li>
+          <li><a href="cambodia.html">Cambodia</a></li>
+          <li><a href="india.html">India</a></li>
+          <li><a href="china.html">China</a></li>
+          <li><a href="thailand.html">Thailand</a></li>
+          <li><a href="vietnam.html">Vietnam</a></li>
+          <li><a href="malaysia.html">Malaysia</a></li>
+          <li><a href="indonesia.html">Indonesia</a></li>
+          <li><a href="singapore.html">Singapore</a></li>
+          <li><a href="jordan.html">Jordan</a></li>
+          <li><a href="uae.html">UAE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Ha Long Bay -->
+      <div class="card" data-country="vietnam" onclick="toggleInfo('info-halong')">
+        <div class="card-content">
+          <div class="text">
+            <h2>Ha Long Bay</h2>
+            <p>
+              <h4>Fees: Depends on the cruise</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-halong');"></span>
+            </p>
+            <div class="info" id="info-halong" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-halong');"> X </button>
+              <p>Ha Long Bay, in northeast Vietnam, is known for its emerald waters and thousands of towering limestone islands topped with rainforests.</p>
+              <p>Visiting Hours: 7 AM - 5 PM</p>
+              <p>Contact: +84 946 505 505</p>
+              <p>
+                <strong>Online Booking:</strong> Yes, tickets can be booked online.
+                <a
+                  href="https://www.halongbaytours.com/cruises/find-a-cruise.html"
+                  target="_blank"
+                  class="book-now"
+                  >Book Now</a
+                >
+              </p>
+              <a href="https://www.halongbaytours.com/" target="_blank" class="learn-more"
+                >Learn More</a
+              >
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d238637.35889195502!2d107.149628!3d20.843465000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a5796518cee87%3A0x55c6b0bcc85478db!2zSOG6oSBMb25nIEJheQ!5e0!3m2!1sen!2sus!4v1727620088584!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+          </div>
+          <img src="ha-long-bay.jpg" alt="Ha Long Bay" />
+        </div>
+      </div>
+      </main>
+    <script src="script.js"></script>
+    <!-- Link to your JavaScript file -->
+  </body>
+</html>

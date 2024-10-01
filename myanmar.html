@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonders of Asia</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your CSS file -->
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <a class="asia" href="index.html">Wonders of Asia</a>
+        </h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            onkeyup="searchSuggestions()"
+            placeholder="Search landmarks..."
+          />
+
+          <div id="suggestions" class="suggestions-container"></div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">All Lankmarks</a></li>
+          <li><a href="myanmar.html">Myanmar</a></li>
+          <li><a href="japan.html">Japan</a></li>
+          <li><a href="cambodia.html">Cambodia</a></li>
+          <li><a href="india.html">India</a></li>
+          <li><a href="china.html">China</a></li>
+          <li><a href="thailand.html">Thailand</a></li>
+          <li><a href="vietnam.html">Vietnam</a></li>
+          <li><a href="malaysia.html">Malaysia</a></li>
+          <li><a href="indonesia.html">Indonesia</a></li>
+          <li><a href="singapore.html">Singapore</a></li>
+          <li><a href="jordan.html">Jordan</a></li>
+          <li><a href="uae.html">UAE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <!-- Shwedagon Pagoda -->          
+        <div class="card" data-country="myanmar" onclick="toggleInfo('info-pagoda')">
+          <div class="card-content">
+            <div class="text">
+              <h2>Shwedagon Pagoda</h2>
+              <p>
+                <h4>Entrance: $8 per person</h4>
+                <span onclick="event.stopPropagation(); toggleInfo('info-pagoda');"></span>
+              </p>
+              <div class="info" id="info-pagoda" style="display: none">
+                <button class="close" onclick="event.stopPropagation(); toggleInfo('info-pagoda');"> X </button>
+                <p>The Shwedagon Pagoda is a gilded stupa located in Yangon, Myanmar. It is considered one of the most important religious sites in Myanmar.</p>
+                <p>Visiting Hours: 4 AM - 10 PM</p>
+                <p>Contact: +959 45174845741,</p>
+                <p><strong>Online Booking:</strong> No online booking available. Tickets can be purchased on-site.</p>
+                <a href="https://www.shwedagonpagoda.com" target="_blank" class="learn-more">Learn More</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61112.91897795042!2d96.146122!3d16.79868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb5e3fffe455%3A0xb7d3ad319654cf6e!2sShwedagon%20Pagoda!5e0!3m2!1sen!2smm!4v1727619039141!5m2!1sen!2smm" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+  
+              </div>
+            </div>
+            <img src="shwedagon-pagoda.jpg" alt="Shwedagon Pagoda" />
+          </div>
+        </div>
+
+
+<!-- Ananda Temple, Bagan -->
+<div class="card" data-country="myanmar" onclick="toggleInfo('info-ananda-temple')">
+  <div class="card-content">
+    <div class="text">
+      <h2>Ananda Temple</h2>
+      <p>
+        <h4>Entrance: Free </h4>
+        <span onclick="event.stopPropagation(); toggleInfo('info-ananda-temple');"></span>
+      </p>
+      <div class="info" id="info-ananda-temple" style="display: none">
+        <button class="close" onclick="event.stopPropagation(); toggleInfo('info-ananda-temple');"> X </button>
+        <p>Ananda Temple is one of the largest and best-preserved temples in Bagan, Myanmar, built in 1105 AD.</p>
+        <p>Visiting Hours: 6 AM - 6 PM</p>
+        <p>Contact: +95 673 406 247</p>
+        </p>
+        <a href="https://tourisminmyanmar.com.mm/highlights/national-treasures/ananda-temple/" target="_blank" class="learn-more"
+          >Learn More</a
+        >
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59528.57523514825!2d94.867548!3d21.170858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30b5e51c276be127%3A0x392ae5db3a1149b9!2sAnanda%20Temple!5e0!3m2!1sen!2smm!4v1727620146098!5m2!1sen!2smm" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+    </div>
+    <img src="ananda-temple.jpg" alt="Ananda Temple" />
+  </div>
+</div>
+
+<!-- Shwezigon Pagoda, Bagan -->
+<div class="card" data-country="myanmar" onclick="toggleInfo('info-shwezigon-pagoda')">
+  <div class="card-content">
+    <div class="text">
+      <h2>Shwezigon Pagoda</h2>
+        <h4>Entrance: Free</h4>
+        <span onclick="event.stopPropagation(); toggleInfo('info-shwezigon-pagoda');"></span>
+      </p>
+      <div class="info" id="info-shwezigon-pagoda" style="display: none">
+        <button class="close" onclick="event.stopPropagation(); toggleInfo('info-shwezigon-pagoda');"> X </button>
+        <p>Shwezigon Pagoda is a large Buddhist pagoda located in Nyaung-U, Myanmar. It is considered a prototype of later Burmese stupas.</p>
+        <p>Visiting Hours: 6 AM - 6 PM</p>
+        <p>Contact: +95 61 60 262</p>
+        <p>
+          <strong>Online Booking:</strong> No online booking available. Tickets can be
+          purchased on-site.
+        </p>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.9203136773754!2d94.8914121109275!3d21.19532428041467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30b5fab4ae38bc97%3A0xdd03aab2c05044c9!2sShwezigon%20Pagoda!5e0!3m2!1sen!2smm!4v1727620222597!5m2!1sen!2smm" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+      </div>
+    </div>
+    <img src="shwezigon-pagoda.jpg" alt="Shwezigon Pagoda" />
+  </div>
+</div>
+
+
+       <!-- Kyaiktiyo Pagoda -->  
+       <div class="card" data-country="myanmar" onclick="toggleInfo('info-kyaiktiyo')">
+        <div class="card-content">
+          <div class="text">
+            <h2>Kyaik Htee Yoe Pagoda</h2>
+            <p>
+              <h4>Entrance: Free</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-kyaiktiyo');"></span>
+            </p>
+            <div class="info" id="info-kyaiktiyo" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-kyaiktiyo');"> X </button>
+              <p>The Kyaiktiyo Pagoda, also known as the Golden Rock, is a well-known Buddhist pilgrimage site in Myanmar. It is famous for its precariously balanced golden rock.</p>
+              <p>Visiting Hours: 24 Hours</p>
+              <p><strong>Online Booking:</strong> No online booking available. Tickets can be purchased on-site.</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5431344183257!2d97.09557171083527!3d17.481567683352583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c30a774afb2ae1%3A0xe3bbe018e15e96fa!2sKyaik%20Htee%20Yoe%20Pagoda!5e0!3m2!1sen!2smm!4v1727620905432!5m2!1sen!2smm" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+          </div>
+          <img src="kyaiktiyo-pagoda.jpg" alt="Kyaiktiyo Pagoda" />
+        </div>
+      </div>
+  
+    </main>
+    <script src="script.js"></script>
+    <!-- Link to your JavaScript file -->
+  </body>
+</html>

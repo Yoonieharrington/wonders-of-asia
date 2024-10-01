@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonders of Asia</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your CSS file -->
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <a class="asia" href="index.html">Wonders of Asia</a>
+        </h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            onkeyup="searchSuggestions()"
+            placeholder="Search landmarks..."
+          />
+
+          <div id="suggestions" class="suggestions-container"></div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">All Lankmarks</a></li>
+          <li><a href="myanmar.html">Myanmar</a></li>
+          <li><a href="japan.html">Japan</a></li>
+          <li><a href="cambodia.html">Cambodia</a></li>
+          <li><a href="india.html">India</a></li>
+          <li><a href="china.html">China</a></li>
+          <li><a href="thailand.html">Thailand</a></li>
+          <li><a href="vietnam.html">Vietnam</a></li>
+          <li><a href="malaysia.html">Malaysia</a></li>
+          <li><a href="indonesia.html">Indonesia</a></li>
+          <li><a href="singapore.html">Singapore</a></li>
+          <li><a href="jordan.html">Jordan</a></li>
+          <li><a href="uae.html">UAE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+   <!-- Petronas Towers -->
+   <div class="card" data-country="malaysia" onclick="toggleInfo('info-petronas')">
+    <div class="card-content">
+      <div class="text">
+        <h2>Petronas Towers</h2>
+        <p>
+          <h4>Entrance: $10 per person</h4>
+          <span onclick="event.stopPropagation(); toggleInfo('info-petronas');"></span>
+        </p>
+        <div class="info" id="info-petronas" style="display: none">
+          <button class="close" onclick="event.stopPropagation(); toggleInfo('info-petronas');"> X </button>
+          <p>The Petronas Towers are twin skyscrapers in Kuala Lumpur, Malaysia, and were the tallest buildings in the world from 1998 to 2004.</p>
+          <p>Visiting Hours: 9 AM - 9 PM</p>
+          <p>Contact: +603 2331 2056</p><p>
+            <strong>Online Booking:</strong> Yes, tickets can be booked online.
+            <a
+              href="https://www.petronastwintowers.com.my/plan-your-visit/admission-ticketing/"
+              target="_blank"
+              class="book-now"
+              >Book Now</a
+            >
+          </p>
+          <a
+            href="https://www.petronastwintowers.com.my/"
+            target="_blank"
+            class="learn-more"
+            >Learn More</a
+          >
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.8807393409224!2d101.70918209839478!3d3.157469300000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d12d669c1f%3A0x9e3afdd17c8a9056!2sPetronas%20Twin%20Towers!5e0!3m2!1sen!2smy!4v1727619396135!5m2!1sen!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+      </div>
+      <img src="petronas-towers.jpg" alt="Petronas Towers" />
+    </div>
+  </div>
+    </main>
+    <script src="script.js"></script>
+    <!-- Link to your JavaScript file -->
+  </body>
+</html>

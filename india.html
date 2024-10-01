@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonders of Asia</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your CSS file -->
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <a class="asia" href="index.html">Wonders of Asia</a>
+        </h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            onkeyup="searchSuggestions()"
+            placeholder="Search landmarks..."
+          />
+
+          <div id="suggestions" class="suggestions-container"></div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">All Lankmarks</a></li>
+          <li><a href="myanmar.html">Myanmar</a></li>
+          <li><a href="japan.html">Japan</a></li>
+          <li><a href="cambodia.html">Cambodia</a></li>
+          <li><a href="india.html">India</a></li>
+          <li><a href="china.html">China</a></li>
+          <li><a href="thailand.html">Thailand</a></li>
+          <li><a href="vietnam.html">Vietnam</a></li>
+          <li><a href="malaysia.html">Malaysia</a></li>
+          <li><a href="indonesia.html">Indonesia</a></li>
+          <li><a href="singapore.html">Singapore</a></li>
+          <li><a href="jordan.html">Jordan</a></li>
+          <li><a href="uae.html">UAE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+            <!-- Taj Mahal -->
+            <div class="card" data-country="india" onclick="toggleInfo('info-taj-mahal')">
+              <div class="card-content">
+                <div class="text">
+                  <h2>Taj Mahal</h2>
+                  <p>
+                    <h4>Entrance: $15 per person</h4>
+                    <span onclick="event.stopPropagation(); toggleInfo('info-taj-mahal');"></span>
+                  </p>
+                  <div class="info" id="info-taj-mahal" style="display: none">
+                    <button class="close" onclick="event.stopPropagation(); toggleInfo('info-taj-mahal');"> X </button>
+                    <p>The Taj Mahal is an ivory-white marble mausoleum located in Agra, India, and is one of the most famous monuments in the world.</p>
+                    <p>Visiting Hours: 6 AM - 7 PM</p>
+                    <p>Contact: +91 562 222 6431</p>
+                    <p><strong>Online Booking:</strong> Yes, tickets can be booked online. 
+                      <a href="https://www.tajmahal.gov.in/ticketing.aspx" target="_blank" class="book-now">Book Now</a></p>
+                    <a href="https://www.tajmahal.gov.in/" target="_blank" class="learn-more">Learn More</a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56790.47439317381!2d78.042155!3d27.175016000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1727619190815!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                  </div>
+                </div>
+                <img src="taj-mahal.jpg" alt="Taj Mahal" />
+              </div>
+            </div>
+    </main>
+    <script src="script.js"></script>
+    <!-- Link to your JavaScript file -->
+  </body>
+</html>

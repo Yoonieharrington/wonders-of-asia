@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonders of Asia</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your CSS file -->
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <a class="asia" href="index.html">Wonders of Asia</a>
+        </h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            onkeyup="searchSuggestions()"
+            placeholder="Search landmarks..."
+          />
+
+          <div id="suggestions" class="suggestions-container"></div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">All Lankmarks</a></li>
+          <li><a href="myanmar.html">Myanmar</a></li>
+          <li><a href="japan.html">Japan</a></li>
+          <li><a href="cambodia.html">Cambodia</a></li>
+          <li><a href="india.html">India</a></li>
+          <li><a href="china.html">China</a></li>
+          <li><a href="thailand.html">Thailand</a></li>
+          <li><a href="vietnam.html">Vietnam</a></li>
+          <li><a href="malaysia.html">Malaysia</a></li>
+          <li><a href="indonesia.html">Indonesia</a></li>
+          <li><a href="singapore.html">Singapore</a></li>
+          <li><a href="jordan.html">Jordan</a></li>
+          <li><a href="uae.html">UAE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!---Wat Arun-->
+      <div class="card" data-country="thailand" onclick="toggleInfo('info-wat-arun')">
+        <div class="card-content">
+          <div class="text">
+            <h2>Wat Arun</h2>
+            <p>
+              <h4>Entrance: $3 per person</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-wat-arun');"></span>
+            </p>
+            <div class="info" id="info-wat-arun" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-wat-arun');"> X </button>
+              <p>Wat Arun, also known as the Temple of Dawn, is one of Bangkok's most iconic landmarks located on the west bank of the Chao Phraya River. The temple is known for its intricate spires that stand majestically on the riverside.</p>
+              <p>Visiting Hours: 8:00 AM - 5:30 PM</p>
+              <p>Contact: +66 2 891 2185</p>
+              <p>
+                <strong>Online Booking:</strong> No online booking available. Tickets can be
+                purchased on-site.
+              </p>   
+              <a href="https://www.wat-arun.com/" target="_blank" class="learn-more"
+                >Learn More</a
+              >
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15502.33179994173!2d100.487137!3d13.743681000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29906eaff2b69%3A0x86fd997e5694b89d!2sWat%20Arun%20Ratchawararam%20Ratchawaramahawihan!5e0!3m2!1sen!2sth!4v1727620999276!5m2!1sen!2sth" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>              
+           
+            </div>
+          </div>
+          <img src="wat-arun.jpg" alt="Wat Arun" />
+        </div>
+      </div>
+      <div class="card" data-country="thailand" onclick="toggleInfo('info-grand-palace')">
+        <div class="card-content">
+          <div class="text">
+            <h2>The Grand Palace</h2>
+            <p>
+              <h4>Entrance: $15 per person</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-grand-palace');"></span>
+            </p>
+            <div class="info" id="info-grand-palace" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-grand-palace');"> X </button>
+              <p>The Grand Palace is a complex of buildings at the heart of Bangkok, Thailand. The palace has been the official residence of the Kings of Siam since 1782. It is one of Thailand's most popular tourist destinations.</p>
+              <p>Visiting Hours: 8:30 AM - 3:30 PM</p>
+              <p>Contact: +66 2623 5500</p>
+              <p>
+                <strong>Online Booking:</strong> Yes, tickets can be booked online.
+                <a
+                  href="https://www.royalgrandpalace.th/en/buy-ticket/form"
+                  target="_blank"
+                  class="book-now"
+                  >Book Now</a
+                >
+              </p>
+              <a href="https://www.royalgrandpalace.th/en/visit/practical-information" target="_blank" class="learn-more">Learn More</a>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15502.33179994173!2d100.487137!3d13.743681000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2994e316c363f%3A0x2a6c77dd93ef4c41!2sThe%20Grand%20Palace!5e0!3m2!1sen!2sth!4v1727621042906!5m2!1sen!2sth" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <img src="grand-palace.jpg" alt="The Grand Palace" />
+        </div>
+      </div>
+      
+    </main>
+    <script src="script.js"></script>
+    <!-- Link to your JavaScript file -->
+  </body>
+</html>

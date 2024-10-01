@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonders of Asia</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your CSS file -->
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+      <h1>
+        <a class="asia" href="index.html">Wonders of Asia</a>
+      </h1>
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          onkeyup="searchSuggestions()"
+          placeholder="Search landmarks..."
+        />
+
+        <div id="suggestions" class="suggestions-container"></div>
+      </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">All Lankmarks</a></li>
+          <li><a href="myanmar.html">Myanmar</a></li>
+          <li><a href="japan.html">Japan</a></li>
+          <li><a href="cambodia.html">Cambodia</a></li>
+          <li><a href="india.html">India</a></li>
+          <li><a href="china.html">China</a></li>
+          <li><a href="thailand.html">Thailand</a></li>
+          <li><a href="vietnam.html">Vietnam</a></li>
+          <li><a href="malaysia.html">Malaysia</a></li>
+          <li><a href="indonesia.html">Indonesia</a></li>
+          <li><a href="singapore.html">Singapore</a></li>
+          <li><a href="jordan.html">Jordan</a></li>
+          <li><a href="uae.html">UAE</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <!-- Shwedagon Pagoda -->          
+      <div class="card" data-country="myanmar" onclick="toggleInfo('info-pagoda')">
+        <div class="card-content">
+          <div class="text">
+            <h2>Shwedagon Pagoda</h2>
+            <p>
+              <h4>Entrance: $8 per person</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-pagoda');"></span>
+            </p>
+            <div class="info" id="info-pagoda" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-pagoda');"> X </button>
+              <p>The Shwedagon Pagoda is a gilded stupa located in Yangon, Myanmar. It is considered one of the most important religious sites in Myanmar.</p>
+              <p>Visiting Hours: 4 AM - 10 PM</p>
+              <p>Contact: +959 45174845741,</p>
+              <p><strong>Online Booking:</strong> No online booking available. Tickets can be purchased on-site.</p>
+                            <a href="https://www.shwedagonpagoda.com" target="_blank" class="learn-more">Learn More</a>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61112.91897795042!2d96.146122!3d16.79868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb5e3fffe455%3A0xb7d3ad319654cf6e!2sShwedagon%20Pagoda!5e0!3m2!1sen!2smm!4v1727619039141!5m2!1sen!2smm" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>             
+
+            </div>
+          </div>
+          <img src="shwedagon-pagoda.jpg" alt="Shwedagon Pagoda" />
+        </div>
+      </div>
+
+      
+      <!-- Taj Mahal -->
+      <div class="card" data-country="india" onclick="toggleInfo('info-taj-mahal')">
+        <div class="card-content">
+          <div class="text">
+            <h2>Taj Mahal</h2>
+            <p>
+              <h4>Entrance: $15 per person</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-taj-mahal');"></span>
+            </p>
+            <div class="info" id="info-taj-mahal" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-taj-mahal');"> X </button>
+              <p>The Taj Mahal is an ivory-white marble mausoleum located in Agra, India, and is one of the most famous monuments in the world.</p>
+              <p>Visiting Hours: 6 AM - 7 PM</p>
+              <p>Contact: +91 562 222 6431</p>
+              <p><strong>Online Booking:</strong> Yes, tickets can be booked online. 
+                <a href="https://www.tajmahal.gov.in/ticketing.aspx" target="_blank" class="book-now">Book Now</a></p>
+              <a href="https://www.tajmahal.gov.in/" target="_blank" class="learn-more">Learn More</a>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56790.47439317381!2d78.042155!3d27.175016000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1727619190815!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+          </div>
+          <img src="taj-mahal.jpg" alt="Taj Mahal" />
+        </div>
+      </div>
+      
+      <!-- Great Wall of China -->
+      <div class="card" data-country="china" onclick="toggleInfo('info-great-wall')">
+        <div class="card-content">
+          <div class="text">
+            <h2>Great Wall of China</h2>
+            <p>
+              <h4>Entrance: $10 per person</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-great-wall');"></span>
+            </p>
+            <div class="info" id="info-great-wall" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-great-wall');"> X </button>
+              <p>The Great Wall of China is a series of fortifications made of various materials, built along the northern borders of China.</p>
+              <p>Visiting Hours: 6 AM - 8 PM</p>
+              <p>Contact: +86 10 6162 6022</p>
+              <p>
+                <strong>Online Booking:</strong> Yes, tickets have to be booked online in
+                advance.
+                <a
+                  href="https://en.mutianyugreatwall.com/reservation-center/tickets"
+                  target="_blank"
+                  class="book-now"
+                  >Book Now</a
+                >
+              </p>
+              <a href="https://en.mutianyugreatwall.com/" target="_blank" class="learn-more"
+                >Learn More</a
+              >
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9589587593205!2d116.56779461166249!3d40.43190767131796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f121d7687f2ccf%3A0xd040259b950522df!2sGreat%20Wall%20of%20China!5e0!3m2!1sen!2sus!4v1727619288340!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+          </div>
+          <img src="great-wall.jpg" alt="Great Wall of China" />
+        </div>
+      </div>
+      
+      <!-- Petronas Towers -->
+      <div class="card" data-country="malaysia" onclick="toggleInfo('info-petronas')">
+        <div class="card-content">
+          <div class="text">
+            <h2>Petronas Towers</h2>
+            <p>
+              <h4>Entrance: $10 per person</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-petronas');"></span>
+            </p>
+            <div class="info" id="info-petronas" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-petronas');"> X </button>
+              <p>The Petronas Towers are twin skyscrapers in Kuala Lumpur, Malaysia, and were the tallest buildings in the world from 1998 to 2004.</p>
+              <p>Visiting Hours: 9 AM - 9 PM</p>
+              <p>Contact: +603 2331 2056</p><p>
+                <strong>Online Booking:</strong> Yes, tickets can be booked online.
+                <a
+                  href="https://www.petronastwintowers.com.my/plan-your-visit/admission-ticketing/"
+                  target="_blank"
+                  class="book-now"
+                  >Book Now</a
+                >
+              </p>
+              <a
+                href="https://www.petronastwintowers.com.my/"
+                target="_blank"
+                class="learn-more"
+                >Learn More</a
+              >
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.8807393409224!2d101.70918209839478!3d3.157469300000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d12d669c1f%3A0x9e3afdd17c8a9056!2sPetronas%20Twin%20Towers!5e0!3m2!1sen!2smy!4v1727619396135!5m2!1sen!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+          </div>
+          <img src="petronas-towers.jpg" alt="Petronas Towers" />
+        </div>
+      </div>
+      
+      <!-- Angkor Wat -->
+      <div class="card" data-country="cambodia" onclick="toggleInfo('info-angkor')">
+        <div class="card-content">
+          <div class="text">
+            <h2>Angkor Wat</h2>
+            <p>
+              <h4>Entrance: $37 per day</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-angkor');"></span>
+            </p>
+            <div class="info" id="info-angkor" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-angkor');"> X </button>
+              <p>Angkor Wat is the largest religious monument in the world, located in Cambodia. It is a UNESCO World Heritage site.</p>
+              <p>Visiting Hours: 5 AM - 6 PM</p>
+              <p>Contact: +855 17 268 8848</p>
+              <p>
+                <strong>Online Booking:</strong> Yes, tickets can be booked online.
+                <a
+                  href="https://ticket.angkorenterprise.gov.kh/auth/login?returnUrl=%2Fpurchases/"
+                  target="_blank"
+                  class="book-now"
+                  >Book Now</a
+                >
+              </p>
+              <a href="https://www.angkorenterprise.gov.kh/" target="_blank" class="learn-more"
+                >Learn More</a
+              >
+              <iframe src="http://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d124191.92140456587!2d103.856594!3d13.412479000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3110168aea9a272d%3A0x3eaba81157b0418d!2sAngkor%20Wat!5e0!3m2!1sen!2scn!4v1727619471336!5m2!1sen!2scn" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+          </div>
+          <img src="angkor-wat.jpg" alt="Angkor Wat" />
+        </div>
+      </div>
+      
+      <!-- Burj Khalifa -->
+      <div class="card" data-country="uae" onclick="toggleInfo('info-burj')">
+        <div class="card-content">
+          <div class="text">
+            <h2>Burj Khalifa</h2>
+            <p>
+              <h4>Entrance: $43.7 per person</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-burj');"></span>
+            </p>
+            <div class="info" id="info-burj" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-burj');"> X </button>
+              <p>The Burj Khalifa is the tallest building in the world, located in Dubai, UAE. It offers stunning views of the city from its observation decks.</p>
+              <p>Visiting Hours: 8 AM - 11 PM</p>
+              <p>Contact: +971 4 888 8888</p>
+              <p>
+                <strong>Online Booking:</strong> Yes, tickets can be booked online.
+                <a
+                  href="https://megapass.com/tours-tickets/burj-khalifa-at-the-top-level-124th-125th-tickets-i2842"
+                  target="_blank"
+                  class="book-now"
+                  >Book Now</a
+                >
+              </p>
+              <a href="https://www.burjkhalifa.ae/en/" target="_blank" class="learn-more"
+                >Learn More</a
+              >
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14440.72836963167!2d55.27521800000001!3d25.197081!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sus!4v1727619671485!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+          </div>
+          <img src="burj-khalifa.jpg" alt="Burj Khalifa" />
+        </div>
+      </div>
+
+      <!-- Mount Fuji -->
+<div class="card" data-country="japan" onclick="toggleInfo('info-fuji')">
+  <div class="card-content">
+    <div class="text">
+      <h2>Mount Fuji</h2>
+      <p>
+        <h4>Entrance: Free</h4>
+        <span onclick="event.stopPropagation(); toggleInfo('info-fuji');"></span>
+      </p>
+      <div class="info" id="info-fuji" style="display: none">
+        <button class="close" onclick="event.stopPropagation(); toggleInfo('info-fuji');"> X </button>
+        <p>Mount Fuji is Japan's tallest mountain, and a popular destination for hiking and cultural visits.</p>
+        <p>Visiting Hours: 24 hours (best during summer)</p>
+        <p>Contact: +81 42 445 0798</p>
+        <a href="https://www.fujisan-climb.jp/en/" target="_blank" class="learn-more"
+  >Learn More</a
+>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13085.731379218384!2d138.7273630780467!3d35.36055525121712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601b2f3eb2c16d7d%3A0x57aa7d56e9332f0a!2sMount%20Fuji!5e0!3m2!1sen!2sjp!4v1632651495677!5m2!1sen!2sjp" width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    <img src="mount-fuji.jpg" alt="Mount Fuji" />
+  </div>
+</div>
+
+<!-- Borobudur Temple -->
+<div class="card" data-country="indonesia" onclick="toggleInfo('info-borobudur')">
+  <div class="card-content">
+    <div class="text">
+      <h2>Borobudur Temple</h2>
+      <p>
+        <h4>Entrance: $25 per person</h4>
+        <span onclick="event.stopPropagation(); toggleInfo('info-borobudur');"></span>
+      </p>
+      <div class="info" id="info-borobudur" style="display: none">
+        <button class="close" onclick="event.stopPropagation(); toggleInfo('info-borobudur');"> X </button>
+        <p>Borobudur is a 9th-century Mahayana Buddhist temple in Central Java, Indonesia, and is the largest Buddhist temple in the world.</p>
+        <p>Visiting Hours: 6 AM - 5 PM</p>
+        <p>Contact: +62 8111 0588 3337</p>
+        <p>
+          <strong>Online Booking:</strong> Yes, tickets can be booked online.
+          <a
+            href="https://ticketcandi.borobudurpark.com/en/#borobudur"
+            target="_blank"
+            class="book-now"
+            >Book Now</a
+          >
+        </p>
+        <a
+          href="https://ticketcandi.borobudurpark.com/en/"
+          target="_blank"
+          class="learn-more"
+          >Learn More</a
+        >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63275.04030401542!2d110.203567!3d-7.608671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a8cf009a7d697%3A0xdd34334744dc3cb!2sBorobudur%20Temple!5e0!3m2!1sen!2sid!4v1727619909666!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <img src="borobudur-temple.jpg" alt="Borobudur Temple" />
+  </div>
+</div>
+
+<!-- Ha Long Bay -->
+<div class="card" data-country="vietnam" onclick="toggleInfo('info-halong')">
+  <div class="card-content">
+    <div class="text">
+      <h2>Ha Long Bay</h2>
+      <p>
+        <h4>Fees: Depends on the cruise</h4>
+        <span onclick="event.stopPropagation(); toggleInfo('info-halong');"></span>
+      </p>
+      <div class="info" id="info-halong" style="display: none">
+        <button class="close" onclick="event.stopPropagation(); toggleInfo('info-halong');"> X </button>
+        <p>Ha Long Bay, in northeast Vietnam, is known for its emerald waters and thousands of towering limestone islands topped with rainforests.</p>
+        <p>Visiting Hours: 7 AM - 5 PM</p>
+        <p>Contact: +84 946 505 505</p>
+        <p>
+          <strong>Online Booking:</strong> Yes, tickets can be booked online.
+          <a
+            href="https://www.halongbaytours.com/cruises/find-a-cruise.html"
+            target="_blank"
+            class="book-now"
+            >Book Now</a
+          >
+        </p>
+        <a href="https://www.halongbaytours.com/" target="_blank" class="learn-more"
+          >Learn More</a
+        >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d238637.35889195502!2d107.149628!3d20.843465000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a5796518cee87%3A0x55c6b0bcc85478db!2zSOG6oSBMb25nIEJheQ!5e0!3m2!1sen!2sus!4v1727620088584!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+    </div>
+    <img src="ha-long-bay.jpg" alt="Ha Long Bay" />
+  </div>
+</div>
+
+<!-- Ananda Temple, Bagan -->
+<div class="card" data-country="myanmar" onclick="toggleInfo('info-ananda-temple')">
+  <div class="card-content">
+    <div class="text">
+      <h2>Ananda Temple</h2>
+      <p>
+        <h4>Entrance: Free</h4>
+        <span onclick="event.stopPropagation(); toggleInfo('info-ananda-temple');"></span>
+      </p>
+      <div class="info" id="info-ananda-temple" style="display: none">
+        <button class="close" onclick="event.stopPropagation(); toggleInfo('info-ananda-temple');"> X </button>
+        <p>Ananda Temple is one of the largest and best-preserved temples in Bagan, Myanmar, built in 1105 AD.</p>
+        <p>Visiting Hours: 6 AM - 6 PM</p>
+        <p>Contact: +95 673 406 247</p>
+        </p>
+        <a href="https://tourisminmyanmar.com.mm/highlights/national-treasures/ananda-temple/" target="_blank" class="learn-more"
+          >Learn More</a
+        >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59528.57523514825!2d94.867548!3d21.170858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30b5e51c276be127%3A0x392ae5db3a1149b9!2sAnanda%20Temple!5e0!3m2!1sen!2smm!4v1727620146098!5m2!1sen!2smm" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+    </div>
+    <img src="ananda-temple.jpg" alt="Ananda Temple" />
+  </div>
+</div>
+
+<!-- Shwezigon Pagoda, Bagan -->
+<div class="card" data-country="myanmar" onclick="toggleInfo('info-shwezigon-pagoda')">
+  <div class="card-content">
+    <div class="text">
+      <h2>Shwezigon Pagoda</h2>
+        <h4>Entrance: Free</h4>
+        <span onclick="event.stopPropagation(); toggleInfo('info-shwezigon-pagoda');"></span>
+      </p>
+      <div class="info" id="info-shwezigon-pagoda" style="display: none">
+        <button class="close" onclick="event.stopPropagation(); toggleInfo('info-shwezigon-pagoda');"> X </button>
+        <p>Shwezigon Pagoda is a large Buddhist pagoda located in Nyaung-U, Myanmar. It is considered a prototype of later Burmese stupas.</p>
+        <p>Visiting Hours: 6 AM - 6 PM</p>
+        <p>Contact: +95 61 60 262</p>
+        <p>
+          <strong>Online Booking:</strong> No online booking available. Tickets can be
+          purchased on-site.
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.9203136773754!2d94.8914121109275!3d21.19532428041467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30b5fab4ae38bc97%3A0xdd03aab2c05044c9!2sShwezigon%20Pagoda!5e0!3m2!1sen!2smm!4v1727620222597!5m2!1sen!2smm" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+    </div>
+    <img src="shwezigon-pagoda.jpg" alt="Shwezigon Pagoda" />
+  </div>
+</div>
+
+
+<!-- Marina Bay Sands -->
+<div class="card" data-country="singapore" onclick="toggleInfo('info-marina-bay')">
+  <div class="card-content">
+    <div class="text">
+      <h2>Marina Bay Sands</h2>
+      <p>
+        <h4>Entrance: $23 per person</h4>
+        <span onclick="event.stopPropagation(); toggleInfo('info-marina-bay');"></span>
+      </p>
+      <div class="info" id="info-marina-bay" style="display: none">
+        <button class="close" onclick="event.stopPropagation(); toggleInfo('info-marina-bay');"> X </button>
+        <p>Marina Bay Sands is an integrated resort fronting Marina Bay in Singapore, famous for its rooftop infinity pool.</p>
+        <p>Visiting Hours: 10 AM - 10 PM</p>
+        <p>Contact: +65 6688 8888</p>
+        <p>
+          <strong>Online Booking:</strong> Yes, tickets can be booked online.
+          <a
+            href="https://www.marinabaysands.com/attractions/search.html"
+            target="_blank"
+            class="book-now"
+            >Book Now</a
+          >
+        </p>
+        <a href="https://www.marinabaysands.com/attractions/sands-skypark.html" target="_blank" class="learn-more">Learn More</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31910.53599624989!2d103.854386!3d1.28368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19ee4cc09203%3A0x26c9afefa555dd7!2sMarina%20Bay%20Sands%20Singapore!5e0!3m2!1sen!2ssg!4v1727620347672!5m2!1sen!2ssg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+    </div>
+    <img src="marina-bay-sands.jpg" alt="Marina Bay Sands" />
+  </div>
+</div>
+
+<!-- Forbidden City -->
+<div class="card" data-country="china" onclick="toggleInfo('info-forbidden-city')">
+  <div class="card-content">
+    <div class="text">
+      <h2>Forbidden City</h2>
+      <p>
+        <h4>Entrance: $9 per person</h4>
+        <span onclick="event.stopPropagation(); toggleInfo('info-forbidden-city');"></span>
+      </p>
+      <div class="info" id="info-forbidden-city" style="display: none">
+        <button class="close" onclick="event.stopPropagation(); toggleInfo('info-forbidden-city');"> X </button>
+        <p>The Forbidden City, located in the heart of Beijing, China, was the imperial palace for over five centuries.</p>
+        <p>Visiting Hours: 8:30 AM - 5:00 PM</p>
+        <p>Contact: +86 400 950 1925</p>
+        <p>
+          <strong>Online Booking:</strong> Yes, tickets can be booked online.
+          <a
+            href="https://bookingticket.dpm.org.cn/"
+            target="_blank"
+            class="book-now"
+            >Book Now</a
+          >
+        </p>
+        <a href="https://intl.dpm.org.cn/visit.html?l=en%20%20" target="_blank" class="learn-more">Learn More</a>
+        
+        <iframe src="http://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10436.529683696504!2d116.39146791450747!3d39.917187135439804!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f052e94515d43d%3A0x674e2bd4dd3079f!2sForbidden%20City!5e0!3m2!1sen!2scn!4v1727620641098!5m2!1sen!2scn" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+    </div>
+    <img src="forbidden-city.jpg" alt="Forbidden City" />
+  </div>
+</div>
+<!-- Petra, Jordan -->
+<div class="card" data-country="jordan" onclick="toggleInfo('info-petra')">
+  <div class="card-content">
+    <div class="text">
+      <h2>Petra</h2>
+      <p>
+        <h4>Entrance: $70 per person</h4>
+        <span onclick="event.stopPropagation(); toggleInfo('info-petra');"></span>
+      </p>
+      <div class="info" id="info-petra" style="display: none">
+        <button class="close" onclick="event.stopPropagation(); toggleInfo('info-petra');"> X </button>
+        <p>Petra is a famous archaeological site in Jordan's southwestern desert. Dating to around 300 B.C., it was the capital of the Nabatean Kingdom and is famous for its rock-cut architecture.</p>
+        <p>Contact: +962 3 215 6060</p>
+        <p>
+          <strong>Online Booking:</strong> Yes, tickets can be booked online.
+          <a
+            href="https://petrapass.pdtra.gov.jo/Online/Index"
+            target="_blank"
+            class="book-now"
+            >Book Now</a
+          >
+        </p>
+        <a href="https://www.visitpetra.jo/en" target="_blank" class="learn-more">Learn More</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d55100.37308087777!2d35.442122!3d30.328965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15016ef1703b6071%3A0x199bf908679a2291!2sPetra!5e0!3m2!1sen!2sus!4v1727620714390!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <img src="petra.jpg" alt="Petra" />
+  </div>
+</div>
+
+       <!-- Kyaiktiyo Pagoda -->  
+       <div class="card" data-country="myanmar" onclick="toggleInfo('info-kyaiktiyo')">
+        <div class="card-content">
+          <div class="text">
+            <h2>Kyaik Htee Yoe Pagoda</h2>
+            <p>
+              <h4>Entrance: Free</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-kyaiktiyo');"></span>
+            </p>
+            <div class="info" id="info-kyaiktiyo" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-kyaiktiyo');"> X </button>
+              <p>The Kyaiktiyo Pagoda, also known as the Golden Rock, is a well-known Buddhist pilgrimage site in Myanmar. It is famous for its precariously balanced golden rock.</p>
+              <p>Visiting Hours: 24 Hours</p>
+              <p><strong>Online Booking:</strong> No online booking available. Tickets can be purchased on-site.</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5431344183257!2d97.09557171083527!3d17.481567683352583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c30a774afb2ae1%3A0xe3bbe018e15e96fa!2sKyaik%20Htee%20Yoe%20Pagoda!5e0!3m2!1sen!2smm!4v1727620905432!5m2!1sen!2smm" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           
+            </div>
+          </div>
+          <img src="kyaiktiyo-pagoda.jpg" alt="Kyaiktiyo Pagoda" />
+        </div>
+      </div>
+<!---Wat Arun-->
+      <div class="card" data-country="thailand" onclick="toggleInfo('info-wat-arun')">
+        <div class="card-content">
+          <div class="text">
+            <h2>Wat Arun</h2>
+            <p>
+              <h4>Entrance: $3 per person</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-wat-arun');"></span>
+            </p>
+            <div class="info" id="info-wat-arun" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-wat-arun');"> X </button>
+              <p>Wat Arun, also known as the Temple of Dawn, is one of Bangkok's most iconic landmarks located on the west bank of the Chao Phraya River. The temple is known for its intricate spires that stand majestically on the riverside.</p>
+              <p>Visiting Hours: 8:00 AM - 5:30 PM</p>
+              <p>Contact: +66 2 891 2185</p>
+              <p>
+                <strong>Online Booking:</strong> No online booking available. Tickets can be
+                purchased on-site.
+              </p>
+              <a href="https://www.wat-arun.com/" target="_blank" class="learn-more"
+                >Learn More</a
+              >    
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15502.33179994173!2d100.487137!3d13.743681000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29906eaff2b69%3A0x86fd997e5694b89d!2sWat%20Arun%20Ratchawararam%20Ratchawaramahawihan!5e0!3m2!1sen!2sth!4v1727620999276!5m2!1sen!2sth" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>              
+              
+            </div>
+          </div>
+          <img src="wat-arun.jpg" alt="Wat Arun" />
+        </div>
+      </div>
+      <!--- Grand Palace--->
+      <div class="card" data-country="thailand" onclick="toggleInfo('info-grand-palace')">
+        <div class="card-content">
+          <div class="text">
+            <h2>The Grand Palace</h2>
+            <p>
+              <h4>Entrance: $15 per person</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-grand-palace');"></span>
+            </p>
+            <div class="info" id="info-grand-palace" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-grand-palace');"> X </button>
+              <p>The Grand Palace is a complex of buildings at the heart of Bangkok, Thailand. The palace has been the official residence of the Kings of Siam since 1782. It is one of Thailand's most popular tourist destinations.</p>
+              <p>Visiting Hours: 8:30 AM - 3:30 PM</p>
+              <p>Contact: +66 2623 5500</p>
+              <p>
+                <strong>Online Booking:</strong> Yes, tickets can be booked online.
+                <a
+                  href="https://www.royalgrandpalace.th/en/buy-ticket/form"
+                  target="_blank"
+                  class="book-now"
+                  >Book Now</a
+                >
+              </p>
+              <a href="https://www.royalgrandpalace.th/en/visit/practical-information" target="_blank" class="learn-more">Learn More</a>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15502.33179994173!2d100.487137!3d13.743681000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2994e316c363f%3A0x2a6c77dd93ef4c41!2sThe%20Grand%20Palace!5e0!3m2!1sen!2sth!4v1727621042906!5m2!1sen!2sth" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <img src="grand-palace.jpg" alt="The Grand Palace" />
+        </div>
+      </div>
+      
+      
+      
+    </main>
+    <script src="script.js"></script>
+    <!-- Link to your JavaScript file -->
+  </body>
+</html>

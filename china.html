@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonders of Asia</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your CSS file -->
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <a class="asia" href="index.html">Wonders of Asia</a>
+        </h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            onkeyup="searchSuggestions()"
+            placeholder="Search landmarks..."
+          />
+
+          <div id="suggestions" class="suggestions-container"></div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">All Lankmarks</a></li>
+          <li><a href="myanmar.html">Myanmar</a></li>
+          <li><a href="japan.html">Japan</a></li>
+          <li><a href="cambodia.html">Cambodia</a></li>
+          <li><a href="india.html">India</a></li>
+          <li><a href="china.html">China</a></li>
+          <li><a href="thailand.html">Thailand</a></li>
+          <li><a href="vietnam.html">Vietnam</a></li>
+          <li><a href="malaysia.html">Malaysia</a></li>
+          <li><a href="indonesia.html">Indonesia</a></li>
+          <li><a href="singapore.html">Singapore</a></li>
+          <li><a href="jordan.html">Jordan</a></li>
+          <li><a href="uae.html">UAE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Great Wall of China -->
+      <div class="card" data-country="china" onclick="toggleInfo('info-great-wall')">
+        <div class="card-content">
+          <div class="text">
+            <h2>Great Wall of China</h2>
+            <p>
+              <h4>Entrance: $10 per person</h4>
+              <span onclick="event.stopPropagation(); toggleInfo('info-great-wall');"></span>
+            </p>
+            <div class="info" id="info-great-wall" style="display: none">
+              <button class="close" onclick="event.stopPropagation(); toggleInfo('info-great-wall');"> X </button>
+              <p>The Great Wall of China is a series of fortifications made of various materials, built along the northern borders of China.</p>
+              <p>Visiting Hours: 6 AM - 8 PM</p>
+              <p>Contact: +86 10 6162 6022</p>
+              <p>
+                <strong>Online Booking:</strong> Yes, tickets have to be booked online in
+                advance.
+                <a
+                  href="https://en.mutianyugreatwall.com/reservation-center/tickets"
+                  target="_blank"
+                  class="book-now"
+                  >Book Now</a
+                >
+              </p>
+              <a href="https://en.mutianyugreatwall.com/" target="_blank" class="learn-more"
+                >Learn More</a
+              >
+              <iframe src="http://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10436.529683696504!2d116.39146791450747!3d39.917187135439804!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f052e94515d43d%3A0x674e2bd4dd3079f!2sForbidden%20City!5e0!3m2!1sen!2scn!4v1727620641098!5m2!1sen!2scn" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+          </div>
+          <img src="great-wall.jpg" alt="Great Wall of China" />
+        </div>
+      </div>
+      
+<!-- Forbidden City -->
+<div class="card" data-country="china" onclick="toggleInfo('info-forbidden-city')">
+  <div class="card-content">
+    <div class="text">
+      <h2>Forbidden City</h2>
+      <p>
+        <h4>Entrance: $9 per person</h4>
+        <span onclick="event.stopPropagation(); toggleInfo('info-forbidden-city');"></span>
+      </p>
+      <div class="info" id="info-forbidden-city" style="display: none">
+        <button class="close" onclick="event.stopPropagation(); toggleInfo('info-forbidden-city');"> X </button>
+        <p>The Forbidden City, located in the heart of Beijing, China, was the imperial palace for over five centuries.</p>
+        <p>Visiting Hours: 8:30 AM - 5:00 PM</p>
+        <p>Contact: +86 400 950 1925</p>
+        <p>
+          <strong>Online Booking:</strong> Yes, tickets can be booked online.
+          <a
+            href="https://bookingticket.dpm.org.cn/"
+            target="_blank"
+            class="book-now"
+            >Book Now</a
+          >
+        </p>
+        <a href="https://intl.dpm.org.cn/visit.html?l=en%20%20" target="_blank" class="learn-more">Learn More</a>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3370.650162237666!2d116.391036714727!3d39.916345879427844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f05c789fb7903d%3A0x62496f2ed9ad3e68!2sForbidden%20City!5e0!3m2!1sen!2scn!4v1632652065847!5m2!1sen!2scn" width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    <img src="forbidden-city.jpg" alt="Forbidden City" />
+  </div>
+</div>
+
+    </main>
+    <script src="script.js"></script>
+    <!-- Link to your JavaScript file -->
+  </body>
+</html>

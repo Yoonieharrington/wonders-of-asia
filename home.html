@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Famous Landmarks in Asia</title>
+    <link rel="stylesheet" href="home.css" />
+    <!-- Link to your CSS file -->
+  </head>
+  <body>
+    <header class="header">
+      <h1>Famous Landmarks in Asia</h1>
+      <p>Discover the beauty and culture of Asia's most famous landmarks.</p>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search landmarks..."
+          oninput="filterLandmarks()"
+        />
+        <div id="dropdown" class="dropdown">
+          <ul id="suggestions"></ul>
+        </div>
+      </div>
+    </header>
+
+    <footer>
+      <p>&copy; 2024 Famous Landmarks in Asia. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Link to your JavaScript file -->
+  </body>
+</html>
